@@ -344,9 +344,9 @@ const Home = () => {
             <span className="text-xl font-black text-slate-900 tracking-tighter uppercase">Pollify</span>
           </div>
           <div className="flex items-center gap-8 text-slate-500 text-sm font-medium">
-            <a href="javascript:void(0)" className="hover:text-violet-600 transition-colors">Produit</a>
-            <a href="javascript:void(0)" className="hover:text-violet-600 transition-colors">Tarifs</a>
-            <a href="javascript:void(0)" className="hover:text-violet-600 transition-colors">Mentions Légales</a>
+            <button type="button" className="hover:text-violet-600 transition-colors">Produit</button>
+            <button type="button" className="hover:text-violet-600 transition-colors">Tarifs</button>
+            <button type="button" className="hover:text-violet-600 transition-colors">Mentions Légales</button>
           </div>
 
           <p className="text-slate-400 text-xs font-medium">

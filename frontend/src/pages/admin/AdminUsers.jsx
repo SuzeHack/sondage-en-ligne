@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from '../../components/layout/Sidebar';
 import Loader from '../../components/common/Loader';
 import { usersAPI } from '../../services/api';
-import { Trash2, ShieldAlert, UserCog, Mail, Calendar, Sparkles, Shield, ArrowUpDown } from 'lucide-react';
+import { Trash2, ShieldAlert, UserCog, Mail, Calendar, Sparkles, Shield } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '../../lib/utils';
 
@@ -171,4 +171,4 @@ const AdminUsers = () => {
   );
 };
 
-export default AdminUsers;
+export default AdminUsers;

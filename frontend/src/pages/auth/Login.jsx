@@ -113,7 +113,7 @@ const Login = () => {
                 </button>
               </div>
               <div className="text-right">
-                <a href="javascript:void(0)" className="text-xs font-bold text-violet-600 hover:text-violet-700 transition-colors">Mot de passe oublié ?</a>
+                <button type="button" className="text-xs font-bold text-violet-600 hover:text-violet-700 transition-colors">Mot de passe oublié ?</button>
               </div>
             </div>
 
@@ -151,4 +151,4 @@ const Login = () => {
 
 export default Login;
 
-
+

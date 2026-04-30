@@ -3,8 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Sidebar from '../../components/layout/Sidebar';
 import Loader from '../../components/common/Loader';
 import { sondagesAPI, questionsAPI } from '../../services/api';
-import { Plus, Trash2, CheckCircle, HelpCircle, Layers, Settings, ArrowLeft, Send, Sparkles, ChevronRight } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Plus, Trash2, CheckCircle, HelpCircle, Layers, Settings, ArrowLeft, Send, Sparkles } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { cn } from '../../lib/utils';
 
 const TYPES = [
@@ -327,4 +327,4 @@ const GererQuestions = () => {
   );
 };
 
-export default GererQuestions;
+export default GererQuestions;

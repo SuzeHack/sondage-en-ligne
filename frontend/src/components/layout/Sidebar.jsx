@@ -5,7 +5,7 @@ import {
   LayoutGrid, List, PlusCircle,
   Users, Settings, LogOut,
   Shield, BarChart3, ChevronRight,
-  User as UserIcon, Sparkles
+  Sparkles
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { cn } from '../../lib/utils';
@@ -120,4 +120,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Sidebar;
