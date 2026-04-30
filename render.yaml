@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sondage-backend
+    env: node
+    region: oregon
+    branch: main
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    plan: starter
