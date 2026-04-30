@@ -1,6 +1,10 @@
 const mysql = require('mysql2/promise');
 require('dotenv').config();
 
+const sslOptions = process.env.DB_SSL === 'true'
+  ? { rejectUnauthorized: true, minVersion: 'TLSv1.2' }
+  : false;
+
 const pool = mysql.createPool({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT || 4000,
@@ -11,10 +15,7 @@ const pool = mysql.createPool({
   connectionLimit: 10,
   queueLimit: 0,
   charset: 'utf8mb4',
-  ssl: {
-    rejectUnauthorized: true,
-    minVersion: 'TLSv1.2'
-  }
+  ssl: sslOptions
 });
 
 const testConnection = async () => {
